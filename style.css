@@ -1,0 +1,404 @@
+header{
+    background: rgb(116,138,246);
+    background: radial-gradient(circle, rgba(116,138,246,0.6979166666666667) 32%, rgba(250,140,163,0.6979166666666667) 100%);
+    padding: 30px 0px; /*espaço ao redor do elemento dentro das bordas*/
+    transition: 0.5s;
+}
+
+#box{
+    position: relative; /*posição inicial de referência do ponto na caixa*/
+    width: 90%;
+    margin: 0 auto;
+}
+
+#box h1 img{
+    width: 20em;
+}
+
+
+
+body{
+    font-family: minhaFonte; /*'Open Sans', sans-serif; /*Font txt*/
+}
+
+nav ul{
+    position: absolute; /*posição inicial de referência do ponto com página inteira*/
+    top: 180px; /*distância do topo*/
+    right: 0px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /*Espaço externo*/
+
+}
+
+nav a:hover{ /*muda o comportamento quando o mouse está acima*/
+    color: #990011;
+    text-decoration: underline;
+}
+
+nav a{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    text-decoration: none; /*design de link padrão desativado*/
+    font-size: 22px;
+}
+
+
+main{
+    background: #fff6ff;
+}
+
+.main{
+    margin: 30px 2em;
+
+}
+
+.imagem-home{
+    padding: 60px 70px ;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    margin-top: 40px;
+    padding: 2px 1px;
+    box-shadow: 0 0 22px 0 rgb(255, 105, 207);
+    margin: 40px;
+
+
+
+}
+
+.imagem-home{
+    display:  inline-block;
+    text-align: center;
+
+
+}
+
+
+.imagem-home2{
+    padding: 60px 70px ;
+    width: 510px;
+    height: 320px;
+    border-radius: 50%;
+    margin-top: 40px;
+    padding: 2px 1px;
+    box-shadow: 0 0 22px 0 rgb(255, 105, 207);
+    margin: 40px;
+
+}
+.imagem-home2{
+    display:  inline-block;
+    text-align: center;
+
+}
+.beleza-gif{
+    padding: 40px 60px ;
+    width: 300px;
+    height: 320px;
+    border-radius: 50%;
+    padding: 2px 1px;
+    box-shadow: 0 0 22px 0 rgb(255, 105, 207);
+    margin: 40px;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: left;
+}
+
+.wrapper2{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+.p{
+    text-align: center;
+
+}
+
+.wrapper3{
+    display: flex;
+    flex-wrap:  nowrap;
+    text-align: left;
+}
+
+
+
+.title_main{
+    text-align: center;
+    font-size: 2em; /* (em) é proporcional ao tamanho em pixels. Aqui tamanho duplo*/
+    clear: left; /*limpa o float de imgs/cut*/
+    margin: 15px 0;
+
+}
+
+
+
+.main p{
+    margin: 1em 0;
+
+}
+
+.main strong{
+    font-weight: bolder;
+}
+
+.local{
+    background: linear-gradient(#FEFEFE,#666666)
+}
+
+.local h2{
+    text-align: center;
+    margin: 2em 0 10px 0;
+    font-size: 2em; /* (em) é o tamanho proporcional em pixels. Aqui tamanho duplo*/
+}
+
+.local > p{  /*todo p que é filho direto do principal, dentro do bloco*/
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.5); /*canal alfa para alterar a opacidade do texto*/
+    text-shadow: 2px 2px 2px #777777;
+}
+
+.map{
+    margin: 30px 30px 0 30px;
+    padding: 2px 1px;
+    box-shadow: 0 0 20px 0 rgb(255, 105, 207);
+}
+
+.servicos{
+    width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.servicos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 20px 30px;
+    box-sizing: border-box;/* As propriedades de largura (largura) e altura (altura) incluem o tamanho de preenchimento e o limite da propriedade */ /*não para aumentar o tamanho do elemento*/
+    border: 2px solid #990011;/*tamanho / estilo / cor */
+    border-radius: 15px; /* curvatura */
+}
+
+.servicos li:hover{/*muda o comportamento quando o mouse acaba*/
+    border-color: #990011;
+}
+
+.servicos li:active{ /*muda o comportamento quando o mouse clica*/
+    border-color: #339900;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.servicos li > img{
+    width: 55%;
+}
+
+.servicos li:hover h2{
+    font-size: 35px;
+}
+
+.servico-description{
+    font-size: 17px;
+
+}
+
+.servico-price{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button {
+    border-radius: 4px;
+    background: rgb(116,138,246);
+    background: radial-gradient(circle, rgba(116,138,246,0.41220238095238093) 61%, rgba(250,140,163,0.4906337535014006) 100%);
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 20px;
+    width: 170px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+
+footer{
+    text-align: center;
+    background: rgb(250,140,242);
+    background: radial-gradient(circle, rgba(250,140,242,0.4906337535014006) 0%, rgba(153,51,153,1) 52%);
+    line-height: 2;
+    margin-top: -5px;
+
+}
+
+footer img{
+    margin-top: 20px;
+    width: 14em;
+
+
+}
+
+.copyright{
+    color: #FFFFFF;
+}
+
+form{
+    margin: 40px auto;
+    width: 650px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.input-pattern{
+    display: block;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
+
+.save{
+    width: 650px;
+    margin: 20px 0;
+    padding: 15px;
+    background: rgb(255, 238, 0);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 2s all;
+}
+
+.save:hover{
+    background: #c9099c;
+    transform: scale(1.1);/*size more*/
+}
+
+@media screen and (max-width: 700px){/*Responsive*/
+    #box, .local, header, .main, body, .video, .map{
+        width: auto;
+    }
+    nav ul{
+        position: static;
+    }
+    #box, .benefits, #four{
+        text-align: center;
+        margin: 0;
+        float: unset;
+    }
+
+
+
+    .main{
+        margin: 30px 2em;
+    }
+
+
+
+    .servicos{
+        width: auto;
+    }
+
+
+
+    .servicos h2{
+        margin: 10px 0;
+        width: 30%;
+    }
+
+    .servicos li > img{
+        width:30%;
+    }
+
+    .servico-description{
+        margin: 22px 20px;
+    }
+
+    .servico-description{
+        margin-bottom: 10px;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    .save{
+        width: 100%;
+        margin: 20px auto 0 auto;
+    }
+
+}
+
+.servicos{
+    width: 900px;
+    margin: 0 auto;
+    padding: auto;
+}
+
+.servicos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin:  1.25%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 30px;
+}
+
+/*CADASTRO*/
+
+
+
+
+
+
